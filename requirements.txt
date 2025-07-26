@@ -1,3 +1,4 @@
+gunicorn
 requirements.txt
 Flask==3.0.2
 feedparser==6.0.11
