@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: news
+    env: python
+    plan: free # Sử dụng gói miễn phí của Render
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "gunicorn --workers 4 --bind 0.0.0.0:$PORT app:app"
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.4 # Chỉ định phiên bản Python
