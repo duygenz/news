@@ -10,14 +10,6 @@ CORS(app)
 # Danh sách các nguồn RSS
 RSS_FEEDS = [
     'https://cafef.vn/thi-truong-chung-khoan.rss',
-    'https://vneconomy.vn/chung-khoan.rss',
-    'https://vneconomy.vn/tai-chinh.rss',
-    'https://vneconomy.vn/thi-truong.rss',
-    'https://vneconomy.vn/nhip-cau-doanh-nghiep.rss',
-    'https://vneconomy.vn/tin-moi.rss',
-    'https://vietstock.vn/830/chung-khoan/co-phieu.rss',
-    'https://vietstock.vn/145/chung-khoan/y-kien-chuyen-gia.rss',
-    'https://cafebiz.vn/rss/cau-chuyen-kinh-doanh.rss'
 ]
 
 @app.route('/news', methods=['GET'])
